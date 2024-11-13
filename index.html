@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Web Showcase</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="phone.css">
+</head>
+<style>
+.color-button {
+    background-color: transparent;
+    color: white;
+    height: 30px;
+    width: 100px;
+    margin: 0 5px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.2s;
+  }
+
+  .color-button:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+     .section10 {
+        position: relative;/* Ensure the parent container is positioned */
+        z-index: -1; /* Set the base z-index */
+    }
+
+    .cases {
+        position: absolute; /* Position title above 3D model */
+        z-index: 10; /* Higher than 3D model to ensure it's above */
+        color: black;
+       }
+
+    .canvas {
+        position: absolute; /* Position the 3D model */
+        z-index: 1; /* Ensure 3D model stays below title */
+        width: 100%; /* Ensure the 3D model fills the container */
+        height: 100%; /* Set a height for the 3D model */
+    }
+</style>    
+<body>
+
+   
+
+
+    <div class="main">
+   
+        
+        <div class="section1">
+
+            <div class="hero" id="home">
+                <video src="assets/hero.v2.mp4" autoplay loop muted id="bg-video"></video>
+
+                <div class="left">
+                    <h1 style="font-size: 2.4vw; margin-left: 8%;">3D Web Showcase, And we call it Reignite</h1>
+                    <div class="top">
+                        
+                        Interactive 3D Worlds at Your Fingertips
+                    </div>
+                    <div class="bottom">
+                        <h4>
+                            INNOVATION AT EVERY TURN
+                        </h4>
+                        <h1>We provide successful </h1>
+                        <h1>implementation strategy of </h1>
+                        <h1>web development solutions </h1>
+                        <h1>and innovative solutions for any </h1>
+                        <h1>challenges you face</h1>
+                        <h1>Let us bring your vision to life in 3D!</h1>
+                        <a style="--clr: #7808d0" class="button" href="https://wa.me/917987901831?text=Hello%20I%20am%20interested%20in%20your%20services">
+                            <span class="button__icon-wrapper">
+                                <svg width="10" class="button__icon-svg" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 14 15">
+                                    <path fill="currentColor"
+                                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z">
+                                    </path>
+                                </svg>
+
+                                <svg class="button__icon-svg  button__icon-svg--copy" xmlns="http://www.w3.org/2000/svg"
+                                    width="10" fill="none" viewBox="0 0 14 15">
+                                    <path fill="currentColor"
+                                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z">
+                                    </path>
+                                </svg>
+                            </span>
+                            Let's Talk
+                        </a>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <video src="assets/f6.mp4" autoplay loop muted id="bg-phone"></video>
+
+                    <div class="text">
+                        <a href="#about" data-scroll-to>
+                            <i class="ri-arrow-down-line"></i>
+                            Scroll <br> to explore
+                        </a>
+                    </div>
+                    <div class="text">
+                        We provide automation <br> within a few days
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="scroller">
+            <div class="m-scroll">
+                <span> Innovation — At <span id="every">Every</span> Turn &nbsp; </span>
+                <span> Innovation — At <span id="every">Every</span> Turn &nbsp; </span>
+                <span> Innovation — At <span id="every">Every</span> Turn &nbsp; </span>
+                <span> Innovation — At <span id="every">Every</span> Turn &nbsp; </span>
+                <span> Innovation — At <span id="every">Every</span> Turn &nbsp; </span>
+                <span> Innovation — At <span id="every">Every</span> Turn &nbsp; </span>
+                <span> Innovation — At <span id="every">Every</span> Turn &nbsp; </span>
+                <span> Innovation — At <span id="every">Every</span> Turn &nbsp; </span>
+                <span> Innovation — At <span id="every">Every</span> Turn &nbsp; </span>
+                <span> Innovation — At <span id="every">Every</span> Turn &nbsp; </span>
+                <span> Innovation — At <span id="every">Every</span> Turn &nbsp; </span>
+                <span> Innovation — At <span id="every">Every</span> Turn &nbsp; </span>
+            </div>
+        </div>
+
+
+     
+        <div class="section2" style="position: relative; z-index: -1;" id="about">
+            <div class="container">
+                <div class="text" style="z-index: 10; color: black;">About us</div>
+
+                <div class="left" style="margin-left: 5%;">
+                    <div style="background-color: rgb(255, 255, 255);  position: absolute;margin-top: 30.6%; margin-left: 22%; z-index: 10;height: 38px;width: 150px;"></div>
+                        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.37/build/spline-viewer.js"></script>
+                        <spline-viewer url="https://prod.spline.design/d-XBc1E0N8-Mvq-c/scene.splinecode"></spline-viewer>
+                </div>
+
+                <div class="right" style=" z-index: 10; color: black;">
+                    <h3 id="first">Reignite is a team of professionals </h3>
+                    <h3><span>focuses</span> on delivering integrated, reliable, </h3>
+                    <h3>resilient and cost-effective solutions and </h3>
+                    <h3><span>regards</span> We pride in ensuring deliver results</h3>
+                    <h3>that meet the unique challenges of each project.</h3>
+
+                    <button class="button">
+                        <a href="#services">Our Services <i class="ri-arrow-right-line"></i> </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    
+        <div class="section3" id="section3">
+           
+
+            <div class="right">
+                <h4>Your Partner</h4>
+                <h1>Why <span>Choose</span><br> Reignite? For 3D <span>Website</span>
+                </h1>
+            </div>
+        </div>
+
+
+
+      
+        <div class="section7" id="services">
+            <div class="left">
+                <br>
+                <p>because we are the best</p>
+                <div class="down">
+                    <h1 id="service">
+                        <span>S</span>
+                        <span>e</span>
+                        <span>r</span>
+                        <span>v</span>
+                        <span>i</span>
+                        <span>c</span>
+                        <span>e</span>
+                        <span>s</span></h1>
+                    <h2><img src="imgs/service.jpg" alt="service"><span>W</span>
+                        <span>e</span>&nbsp;<span>O</span>
+                        <span>f</span>
+                        <span>f</span>
+                        <span>e</span>
+                        <span>r</span></h2>
+                </div>
+            </div>
+            <div class="right">
+                <p>We create IT solutions that help organizations work better, speed up product development, and quickly deliver websites and services, giving businesses a competitive advantage.
+                </p>
+                <p>
+                     Helping businesses work faster, deliver better products, and offer services quickly with IT solutions that drive success. 
+                     Custom 3D or AR/VR Experiences: 
+                    </p>
+                <button class="button">
+                    <a href="">Let's Talk <i class="ri-arrow-right-line"></i> </a>
+                </button>
+            </div>
+        </div>
+        <div class="section4">
+            <div class="left">
+               <h3 style="font-family: HelvM;font-weight: 300;text-transform: uppercase;font-size: .9vw;letter-spacing: 5px;">Creating Engaging and Interactive 3D Websites for Your Business</h3><br> Interactive 3D website
+            </div>
+            <div class="right"><div style="position: absolute; z-index: 10; height: .6%; width: 10%; margin-top: 50.5%; margin-left: 34%; background-color: #000000;" ></div><script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.37/build/spline-viewer.js"></script>
+                <spline-viewer url="https://prod.spline.design/jltO1dRnOF-BO782/scene.splinecode"></spline-viewer>
+               </div>
+        </div>
+
+        <div class="section5">
+            <div class="left"><div style="position: absolute; z-index: 10; height: .8%; width: 10%; margin-top: 32%; margin-left: 34%; background-color: hsl(5, 83%, 37%);" ></div><script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.37/build/spline-viewer.js"></script>
+                <spline-viewer url="https://prod.spline.design/XbAP8Yz22hBzQFtQ/scene.splinecode"></spline-viewer></div>
+                <div class="right"><h3 style="font-family: HelvM;font-weight: 300; color: #000000; text-transform: uppercase;font-size: 1.9vw;letter-spacing: 5px;">Creating Engaging and Interactive 3D </h3> <br> We Design 3D Model Of Product</div>
+        </div>
+        <div class="section10" id="cases">
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.37/build/spline-viewer.js"></script>
+             <spline-viewer class="canvas" url="https://prod.spline.design/IZ93itU0YQ2mRLbp/scene.splinecode"></spline-viewer>
+             <h1 class="cases">Website Design and Development</h1>
+             <div style="background-color: #ffffff;width: 10%;height: 6%;margin-left: 89%;margin-bottom: 10%;margin-top: 50.5%; z-index: 1000;"></div>
+         </div>
+         <div class="section">
+           
+   </div>
+ 
+   <div class="section8">
+    <div class="left">
+        <canvas id="canvas" style="top: 0;left: 0;"></canvas>
+        <script type="module" src="main.js"></script>
+    </div>
+        <div class="right"><h3 style="font-family: HelvM;font-weight: 300; color: #000000; text-transform: uppercase;font-size: 1.9vw;letter-spacing: 5px;">I create custom 3D models and seamlessly integrate them into websites </h3><br>Live update <br> features for dynamic websites.</div>
+</div>
+     
+        <div class="section9" id="section9">
+            <div class="top">
+                <div class="left">
+                    <h3>We are the best in</h3>
+                </div>
+                <div class="right">
+                    <button class="button">
+                        <a href="#">View our Projects <i class="ri-arrow-right-line"></i> </a>
+                    </button>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="scroller">
+                    <div class="m-scroll">
+                        <span> Cloud application development services <span id="every"></span> &nbsp;</span>
+                       <span> Modernization <span id="every"></span>&nbsp; </span>
+                        <span> UX and UI design<span id="every"></span>&nbsp; </span>
+                        <span> IT infrastructure support <span id="every"></span>&nbsp; </span>
+                        <span> Quality and Performance Engineering <span id="every"></span>&nbsp; </span>
+                        <span> Cloud application development services <span id="every"></span> &nbsp;</span>
+                        <span> Modernization <span id="every"></span>&nbsp; </span>
+                         <span> UX and UI design<span id="every"></span>&nbsp; </span>
+                         <span> IT infrastructure support <span id="every"></span>&nbsp; </span>
+                         <span> Quality and Performance Engineering <span id="every"></span>&nbsp; </span>
+                         <span> Cloud application development services <span id="every"></span> &nbsp;</span>
+                         <span> Modernization <span id="every"></span>&nbsp; </span>
+                          <span> UX and UI design<span id="every"></span>&nbsp; </span>
+                          <span> IT infrastructure support <span id="every"></span>&nbsp; </span>
+                          <span> Quality and Performance Engineering <span id="every"></span>&nbsp; </span>
+                          <span> Cloud application development services <span id="every"></span> &nbsp;</span>
+                         
+                              
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+     
+       
+
+        <div class="section12" id="section12">
+            <div class="top">
+                <h1>
+                    Hey! We are <span>ready</span> <br> to <span class="colorful">consult you_</span>
+                </h1>
+            </div>
+            <form class="mid">
+                <div class="line1" id="line">
+                    <span>My name is </span>
+                    <input type="text" required placeholder="first and last name">
+                    <span> and I’m interested in </span>
+                    <input type="text" placeholder="service name">
+                    <span>.</span>
+                </div>
+                <div class="line2" id="line">
+                    <span>My project budget </span>
+                    <button>₹10-15K</button>
+                    <button>₹15-20K</button>
+                    <button>₹20-35K</button>
+                    <button>₹35-50K</button>
+                    <button>>50K</button>
+                    <span>.</span>
+                </div>
+                <div class="line3" id="line">
+                    <span>Please, contact me at </span>
+                    <input type="email" required placeholder="name@example.com">
+                    <span>.</span>
+                </div>
+                <div class="line4" id="line">
+                    <span>Optionally, I’m sharing more: </span>
+                    <input type="text" required placeholder="your project details">
+                    <span>.</span>
+                </div>
+                <div class="line5" id="line">
+                    <button class="button" type="submit" value="submit">
+                        <a href="#">Send Request <i class="ri-arrow-right-line"></i> </a>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    
+        <div class="section13" id="section13">
+            <div class="top">
+                <div class="toBorder">
+                    <div class="border"></div>
+                </div>
+                <div class="left">
+                   
+                </div>
+                <div class="right">
+                    <a href="https://www.linkedin.com/company/infosys" target="_blank">
+                        <i class="ri-linkedin-box-fill"></i>Linkedin
+                    </a>
+                    <h3>
+                        <i class="ri-heart-fill"></i> Developed by Pratyush 
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js" integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js" integrity="sha512-5T245ZTH0m0RfONiFm2NF0zcYcmAuNzcGyPSQ18j8Bs5Pbfhp5HP1hosrR8XRt5M3kSRqzjNMYpm2+it/AUX/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples.min.js"></script>
+    <script src="script.js"></script>
+  
+</body>
+
+</html>
